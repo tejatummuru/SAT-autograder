@@ -1,0 +1,13 @@
+.form {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.flex-grid {
+    display: grid;
+    justify-content: space-between;
+    color: blue;
+}
+.col {
+    flex: 1;
+}
