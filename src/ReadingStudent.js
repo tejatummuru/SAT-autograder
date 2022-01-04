@@ -8,7 +8,8 @@ import {scale_rw} from './ScaleR';
 var master_answers_rws = [];
 var incorrect = 0;
 var raw_score_reading = 0;
-
+//the problem for displaying the score is that it does the calculations before anything is added and then never again, must change
+//what triggers the score display
 function ReadingStudent(){  
     function formAction(event){
         event.preventDefault();
@@ -22,6 +23,7 @@ function ReadingStudent(){
         //once we have the correct answers, we should have another file to pull the raw score and multiply by 10 and
         //return a final score for the reading subsection, so now i will build that file
         console.log(master_answers_rws);
+        console.log(master_answers_rwm);
         console.log(52 - incorrect);
         raw_score_reading = scale_rw[52 - incorrect - 1];
         return raw_score_reading; //do i need to do this in js?
