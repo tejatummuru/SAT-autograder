@@ -14,7 +14,7 @@ function ScaleWr(){
         event.preventDefault();
         scale_wr.splice(0, scale_wr.length);
         for(let i = 0; i < 44; i++){
-            scale_wr.push(document.getElementById('box' + i).value);
+            scale_wr.push(document.getElementById('box' + (i + 418)).value);
         }
         console.log("performed action");
         console.log(scale_wr);
@@ -22,93 +22,93 @@ function ScaleWr(){
 return(
 <form name="writing" onSubmit={formActionW}>
     <p>#1</p>
-    <input type="text" id="box0"/>
+    <input type="text" id="box418"/>
     <p>#2</p>
-    <input type="text" id="box1"/>
+    <input type="text" id="box419"/>
     <p>#3</p>
-    <input type="text" id="box2" />
+    <input type="text" id="box420" />
     <p>#4</p>
-    <input type="text" id="box3"/>
+    <input type="text" id="box421"/>
     <p>#5</p>
-    <input type="text" id="box4"/>
+    <input type="text" id="box422"/>
     <p>#6</p>
-    <input type="text" id="box5"/>
+    <input type="text" id="box423"/>
     <p>#7</p>
-    <input type="text" id="box6"/>
+    <input type="text" id="box424"/>
     <p>#8</p>
-    <input type="text" id="box7"/>
+    <input type="text" id="box425"/>
     <p>#9</p>
-    <input type="text" id="box8"/>
+    <input type="text" id="box426"/>
     <p>#10</p>
-    <input type="text" id="box9"/>
+    <input type="text" id="box427"/>
     <p>#11</p>
-    <input type="text" id="box10"/>
+    <input type="text" id="box428"/>
     <p>#12</p>
-    <input type="text" id="box11"/>
+    <input type="text" id="box429"/>
     <p>#13</p>
-    <input type="text" id="box12"/>
+    <input type="text" id="box430"/>
     <p>#14</p>
-    <input type="text" id="box13"/>
+    <input type="text" id="box431"/>
     <p>#15</p>
-    <input type="text" id="box14"/>
+    <input type="text" id="box432"/>
     <p>#16</p>
-    <input type="text" id="box15"/>
+    <input type="text" id="box433"/>
     <p>#17</p>
-    <input type="text" id="box16"/>
+    <input type="text" id="box434"/>
     <p>#18</p>
-    <input type="text" id="box17"/>
+    <input type="text" id="box435"/>
     <p>#19</p>
-    <input type="text" id="box18"/>
+    <input type="text" id="box436"/>
     <p>#20</p>
-    <input type="text" id="box19"/>
+    <input type="text" id="box437"/>
     <p>#21</p>
-    <input type="text" id="box20"/>
+    <input type="text" id="box438"/>
     <p>#22</p>
-    <input type="text" id="box21"/>
+    <input type="text" id="box439"/>
     <p>#23</p>
-    <input type="text" id="box22"/>
+    <input type="text" id="box440"/>
     <p>#24</p>
-    <input type="text" id="box23"/>
+    <input type="text" id="box441"/>
     <p>#25</p>
-    <input type="text" id="box24"/>
+    <input type="text" id="box442"/>
     <p>#26</p>
-    <input type="text" id="box25"/>
+    <input type="text" id="box443"/>
     <p>#27</p>
-    <input type="text" id="box26"/>
+    <input type="text" id="box444"/>
     <p>#28</p>
-    <input type="text" id="box27"/>
+    <input type="text" id="box445"/>
     <p>#29</p>
-    <input type="text" id="box28"/>
+    <input type="text" id="box446"/>
     <p>#30</p>
-    <input type="text" id="box29"/>
+    <input type="text" id="box447"/>
     <p>#31</p>
-    <input type="text" id="box30"/>
+    <input type="text" id="box448"/>
     <p>#32</p>
-    <input type="text" id="box31"/>
+    <input type="text" id="box449"/>
     <p>#33</p>
-    <input type="text" id="box32"/>
+    <input type="text" id="box450"/>
     <p>#34</p>
-    <input type="text" id="box33"/>
+    <input type="text" id="box451"/>
     <p>#35</p>
-    <input type="text" id="box34"/>
+    <input type="text" id="box452"/>
     <p>#36</p>
-    <input type="text" id="box35"/>
+    <input type="text" id="box453"/>
     <p>#37</p>
-    <input type="text" id="box36"/>
+    <input type="text" id="box454"/>
     <p>#38</p>
-    <input type="text" id="box37"/>
+    <input type="text" id="box455"/>
     <p>#39</p>
-    <input type="text" id="box38"/>
+    <input type="text" id="box456"/>
     <p>#40</p>
-    <input type="text" id="box39"/>
+    <input type="text" id="box457"/>
     <p>#41</p>
-    <input type="text" id="box40"/>
+    <input type="text" id="box458"/>
     <p>#42</p>
-    <input type="text" id="box41"/>
+    <input type="text" id="box459"/>
     <p>#43</p>
-    <input type="text" id="box42"/>
+    <input type="text" id="box460"/>
     <p>#44</p>
-    <input type="text" id="box43"/>
+    <input type="text" id="box461"/>
     <input type="submit" value="Submit"/>
 </form>
 )

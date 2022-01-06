@@ -11,7 +11,8 @@ function MNoCalcMaster(){
         event.preventDefault();
         master_answers_mnc.splice(0, master_answers_mnc.length);
         for(let i = 0; i < 20; i++){
-            master_answers_mnc.push(document.getElementById('box' + i).value);
+            master_answers_mnc.push(document.getElementById('box' + (i + 96)).value);
+            console.log(document.getElementById('box' + (i + 96)).value);
         }
         console.log("performed action");
         console.log(master_answers_mnc);
@@ -19,45 +20,45 @@ function MNoCalcMaster(){
 return(
 <form name="reading" onSubmit={formAction}>
     <p>#1</p>
-    <input type="text" id="box0"/>
+    <input type="text" id="box96"/>
     <p>#2</p>
-    <input type="text" id="box1"/>
+    <input type="text" id="box97"/>
     <p>#3</p>
-    <input type="text" id="box2" />
+    <input type="text" id="box98" />
     <p>#4</p>
-    <input type="text" id="box3"/>
+    <input type="text" id="box99"/>
     <p>#5</p>
-    <input type="text" id="box4"/>
+    <input type="text" id="box100"/>
     <p>#6</p>
-    <input type="text" id="box5"/>
+    <input type="text" id="box101"/>
     <p>#7</p>
-    <input type="text" id="box6"/>
+    <input type="text" id="box102"/>
     <p>#8</p>
-    <input type="text" id="box7"/>
+    <input type="text" id="box103"/>
     <p>#9</p>
-    <input type="text" id="box8"/>
+    <input type="text" id="box104"/>
     <p>#10</p>
-    <input type="text" id="box9"/>
+    <input type="text" id="box105"/>
     <p>#11</p>
-    <input type="text" id="box10"/>
+    <input type="text" id="box106"/>
     <p>#12</p>
-    <input type="text" id="box11"/>
+    <input type="text" id="box107"/>
     <p>#13</p>
-    <input type="text" id="box12"/>
+    <input type="text" id="box108"/>
     <p>#14</p>
-    <input type="text" id="box13"/>
+    <input type="text" id="box109"/>
     <p>#15</p>
-    <input type="text" id="box14"/>
+    <input type="text" id="box110"/>
     <p>#16</p>
-    <input type="text" id="box15"/>
+    <input type="text" id="box111"/>
     <p>#17</p>
-    <input type="text" id="box16"/>
+    <input type="text" id="box112"/>
     <p>#18</p>
-    <input type="text" id="box17"/>
+    <input type="text" id="box113"/>
     <p>#19</p>
-    <input type="text" id="box18"/>
+    <input type="text" id="box114"/>
     <p>#20</p>
-    <input type="text" id="box19"/>
+    <input type="text" id="box115"/>
     <input type="submit" value="Submit"/>
 </form>
 )

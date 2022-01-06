@@ -33,6 +33,7 @@ function ReadingMaster(){
         for(let i = 0; i < 52; i++){
             master_answers_rwm.push(document.getElementById('box' + i).value);
         }
+
         console.log("performed action");
         console.log(master_answers_rwm);
     }

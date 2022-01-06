@@ -16,16 +16,17 @@ function MCalcStudent(){
         event.preventDefault();
         master_answers_mcs.splice(0, master_answers_mcs.length);
         for(let i = 0; i < 38; i++){
-            master_answers_mcs.push(document.getElementById('box' + i).value);
-            if(master_answers_mcs[i].includes(",")){
+            master_answers_mcs.push(document.getElementById('box' + (i + 270)).value);
+            if(master_answers_mcs[i].includes(',')){
                 var arr = master_answers_mcs[i].split(',');
                 var found = false;
                 var length = 0;
                 while(!found && length < arr.length){
-                    if(master_answers_mcm[i] == master_answers_mcs[i]){
+                    if(arr[i] == master_answers_mcs[i]){
                         found = true;
                     }
                     length++;
+                    i++;
                 }
                 if(!found){
                     incorrect++;
@@ -50,81 +51,81 @@ function MCalcStudent(){
 return(
 <form name="math calc" onSubmit={formAction}>
     <p>#1</p>
-    <input type="text" id="box0"/>
+    <input type="text" id="box270"/>
     <p>#2</p>
-    <input type="text" id="box1"/>
+    <input type="text" id="box271"/>
     <p>#3</p>
-    <input type="text" id="box2" />
+    <input type="text" id="box272" />
     <p>#4</p>
-    <input type="text" id="box3"/>
+    <input type="text" id="box273"/>
     <p>#5</p>
-    <input type="text" id="box4"/>
+    <input type="text" id="box274"/>
     <p>#6</p>
-    <input type="text" id="box5"/>
+    <input type="text" id="box275"/>
     <p>#7</p>
-    <input type="text" id="box6"/>
+    <input type="text" id="box276"/>
     <p>#8</p>
-    <input type="text" id="box7"/>
+    <input type="text" id="box277"/>
     <p>#9</p>
-    <input type="text" id="box8"/>
+    <input type="text" id="box278"/>
     <p>#10</p>
-    <input type="text" id="box9"/>
+    <input type="text" id="box279"/>
     <p>#11</p>
-    <input type="text" id="box10"/>
+    <input type="text" id="box280"/>
     <p>#12</p>
-    <input type="text" id="box11"/>
+    <input type="text" id="box281"/>
     <p>#13</p>
-    <input type="text" id="box12"/>
+    <input type="text" id="box282"/>
     <p>#14</p>
-    <input type="text" id="box13"/>
+    <input type="text" id="box283"/>
     <p>#15</p>
-    <input type="text" id="box14"/>
+    <input type="text" id="box284"/>
     <p>#16</p>
-    <input type="text" id="box15"/>
+    <input type="text" id="box285"/>
     <p>#17</p>
-    <input type="text" id="box16"/>
+    <input type="text" id="box286"/>
     <p>#18</p>
-    <input type="text" id="box17"/>
+    <input type="text" id="box287"/>
     <p>#19</p>
-    <input type="text" id="box18"/>
+    <input type="text" id="box288"/>
     <p>#20</p>
-    <input type="text" id="box19"/>
+    <input type="text" id="box289"/>
     <p>#21</p>
-    <input type="text" id="box20"/>
+    <input type="text" id="box290"/>
     <p>#22</p>
-    <input type="text" id="box21"/>
+    <input type="text" id="box291"/>
     <p>#23</p>
-    <input type="text" id="box22"/>
+    <input type="text" id="box292"/>
     <p>#24</p>
-    <input type="text" id="box23"/>
+    <input type="text" id="box293"/>
     <p>#25</p>
-    <input type="text" id="box24"/>
+    <input type="text" id="box294"/>
     <p>#26</p>
-    <input type="text" id="box25"/>
+    <input type="text" id="box295"/>
     <p>#27</p>
-    <input type="text" id="box26"/>
+    <input type="text" id="box296"/>
     <p>#28</p>
-    <input type="text" id="box27"/>
+    <input type="text" id="box297"/>
     <p>#29</p>
-    <input type="text" id="box28"/>
+    <input type="text" id="box298"/>
     <p>#30</p>
-    <input type="text" id="box29"/>
+    <input type="text" id="box299"/>
     <p>#31</p>
-    <input type="text" id="box30"/>
+    <input type="text" id="box300"/>
     <p>#32</p>
-    <input type="text" id="box31"/>
+    <input type="text" id="box301"/>
     <p>#33</p>
-    <input type="text" id="box32"/>
+    <input type="text" id="box302"/>
     <p>#34</p>
-    <input type="text" id="box33"/>
+    <input type="text" id="box303"/>
     <p>#35</p>
-    <input type="text" id="box34"/>
+    <input type="text" id="box304"/>
     <p>#36</p>
-    <input type="text" id="box35"/>
+    <input type="text" id="box305"/>
     <p>#37</p>
-    <input type="text" id="box36"/>
+    <input type="text" id="box306"/>
     <p>#38</p>
-    <input type="text" id="box37"/>
+    <input type="text" id="box307"/>
     <input type="submit" value="Submit"/>
 </form>
 )

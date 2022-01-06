@@ -12,21 +12,26 @@ function MNoCalcStudent(){
     function formAction(event){
         event.preventDefault();
         master_answers_mncs.splice(0, master_answers_mncs.length);
-        for(let i = 0; i < 52; i++){
-            master_answers_mncs.push(document.getElementById('box' + i).value);
-            if(master_answers_mnc[i].includes(",")){
+        for(let i = 0; i < 20; i++){
+            master_answers_mncs.push(document.getElementById('box' + (i + 250)).value);
+            if(master_answers_mnc[i].includes(',')){
+                console.log("entered");
                 var arr = master_answers_mnc[i].split(',');
+                console.log(arr);
                 var found = false;
                 var length = 0;
                 while(!found && length < arr.length){
-                    if(master_answers_mnc[i] == master_answers_mncs[i]){
+                    if(arr[i] == master_answers_mncs[i]){
                         found = true;
                     }
+                    i++;
                     length++;
                 }
-                if(!found){
+                console.log(found);
+                if(found == false){
                     incorrect++;
                 }
+                console.log("incorrect: " + incorrect);
             }else if(master_answers_mnc[i].includes("-")){
                 arr = master_answers_mnc[i].split('-');
                 if(Number(master_answers_mncs[i]) < Number(arr[0]) || Number(master_answers_mncs[i]) > Number(arr[1])){
@@ -46,45 +51,45 @@ function MNoCalcStudent(){
 return(
 <form name="math no calc" onSubmit={formAction}>
     <p>#1</p>
-    <input type="text" id="box0"/>
+    <input type="text" id="box250"/>
     <p>#2</p>
-    <input type="text" id="box1"/>
+    <input type="text" id="box251"/>
     <p>#3</p>
-    <input type="text" id="box2" />
+    <input type="text" id="box252" />
     <p>#4</p>
-    <input type="text" id="box3"/>
+    <input type="text" id="box253"/>
     <p>#5</p>
-    <input type="text" id="box4"/>
+    <input type="text" id="box254"/>
     <p>#6</p>
-    <input type="text" id="box5"/>
+    <input type="text" id="box255"/>
     <p>#7</p>
-    <input type="text" id="box6"/>
+    <input type="text" id="box256"/>
     <p>#8</p>
-    <input type="text" id="box7"/>
+    <input type="text" id="box257"/>
     <p>#9</p>
-    <input type="text" id="box8"/>
+    <input type="text" id="box258"/>
     <p>#10</p>
-    <input type="text" id="box9"/>
+    <input type="text" id="box259"/>
     <p>#11</p>
-    <input type="text" id="box10"/>
+    <input type="text" id="box260"/>
     <p>#12</p>
-    <input type="text" id="box11"/>
+    <input type="text" id="box261"/>
     <p>#13</p>
-    <input type="text" id="box12"/>
+    <input type="text" id="box262"/>
     <p>#14</p>
-    <input type="text" id="box13"/>
+    <input type="text" id="box263"/>
     <p>#15</p>
-    <input type="text" id="box14"/>
+    <input type="text" id="box264"/>
     <p>#16</p>
-    <input type="text" id="box15"/>
+    <input type="text" id="box265"/>
     <p>#17</p>
-    <input type="text" id="box16"/>
+    <input type="text" id="box266"/>
     <p>#18</p>
-    <input type="text" id="box17"/>
+    <input type="text" id="box267"/>
     <p>#19</p>
-    <input type="text" id="box18"/>
+    <input type="text" id="box268"/>
     <p>#20</p>
-    <input type="text" id="box19"/>
+    <input type="text" id="box269"/>
     <input type="submit" value="Submit"/>
 </form>
 )
